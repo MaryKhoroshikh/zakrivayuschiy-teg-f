@@ -2,10 +2,11 @@
 :root {
     --font: Inter-Variable, sans-serif;
     --font-accent: PressStart2P-Regular, sans-serif;
-    --f-w-text: 465; 
-    --f-w-title: 785;
-    /* для светлой темы 400 и 700 соотв */
+    --f-w-text: 400; 
+    --f-w-title: 700;
+    /* для темной темы 465 и 785 соотв */
 
-    --bg-color: ;
-    --accent-color: ;
+    --bg-clr:  #fff;
+    --accent-color: #f00;
+    --text-clr: #000;
 }

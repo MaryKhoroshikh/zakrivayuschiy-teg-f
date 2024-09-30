@@ -19,14 +19,16 @@
   min-block-size: 100dvb;
   font-family: var(--font);
   font-variation-settings: 'wght' var(--f-w-text);
+  background-color: var(--bg-clr);
+  color: var(--text-clr);
 }
 
 svg {
+  /* для проверки отображения */
   width: 100px;
   padding: 20px;
 }
 
 .floppy {
-  /* ничего не работает с цветом */
-  color: red;
+
 }
