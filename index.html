@@ -22,7 +22,11 @@
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
-    <header class="header">
+    <header class="header section">
+      <h1>&lt;/HTML&gt;</h1>
+      <p>
+        закрывающий тег
+      </p>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -49,7 +53,55 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="main section">
+      <article class="card">
+        <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
+        <picture class="card__img">
+          <source 
+            type="image/avif" 
+            srcset="./images/bus-large.avif" 
+            media="(min-width: 376px)">
+          <source 
+            type="image/webp" 
+            srcset="./images/bus-large.webp" 
+            media="(min-width: 376px)">
+          <source 
+            type="image/png" 
+            srcset="./images/bus-large.png" 
+            media="(min-width: 376px)">
+          <source 
+            type="image/avif" 
+            srcset="./images/bus-small.avif">
+          <source 
+            type="image/webp" 
+            srcset="./images/bus-small.webp">
+          <source 
+            type="image/png"
+            srcset="./images/bus-small.png">
+          <img
+              class="img" 
+              src="./images/bus-small.png" 
+              alt="микроавтобус"
+              loading="lazy"
+          >
+        </picture>
+        <p class="card__text">
+          Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
+        </p>
+        <p class="card__text">
+          Место для ваших воспоминаний о начале обучения.
+        </p>
+        <svg class="like-icon">
+          <!-- сюда вставить иконку сердечка -->
+        </svg>
+        <button class="card__like-button">
+          Like
+        </button>
+      </article>
+      <button class=""></button>
+      <button class="button__text">
+        Сохранить на память
+      </button>
       <svg viewBox="0 0 40 40">
         <use href="./svg/floppy.svg#floppy" class="floppy">
       </svg>

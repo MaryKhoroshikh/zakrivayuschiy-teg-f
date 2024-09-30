@@ -24,6 +24,29 @@
   background-attachment: fixed;
   background-size: cover;
   color: var(--text-clr);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section {
+  inline-size: 48vi;
+  padding-block-start: 100px;
+  background-color: var(--bg-clr);
+}
+
+.header {
+  border: 1px solid var(--text-clr);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.card {
+  border: 1px solid var(--text-clr);
 }
 
 svg {
@@ -34,4 +57,10 @@ svg {
 
 .floppy {
 
+}
+
+@media (width <= 375px) {
+  .width {
+    inline-size: 100%;
+  }
 }
