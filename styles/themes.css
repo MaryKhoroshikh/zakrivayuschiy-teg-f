@@ -11,6 +11,11 @@
 
     --bg-clr:  #000;
     --text-clr: #00cc14;
+
+    --bg-gr: 
+    repeating-linear-gradient(90deg, #d000 0px, #000 2px, transparent 2px, transparent 4px),
+    repeating-linear-gradient(#000 0px, #000 2px, transparent 2px, transparent 4px),
+    linear-gradient(#007f0c, #004306);
 }
 
 :root.theme-light {
@@ -19,6 +24,11 @@
 
     --bg-clr:  #fff;
     --text-clr: #000;
+
+    --bg-gr: 
+    repeating-linear-gradient(90deg, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
+    repeating-linear-gradient(#d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
+    linear-gradient(#e7e7e7 0.01%, #1a1a1a);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,5 +38,10 @@
     
         --bg-clr:  #000;
         --text-clr: #00cc14;
+
+        --bg-gr: 
+        repeating-linear-gradient(90deg, #d000 0px, #000 2px, transparent 2px, transparent 4px),
+        repeating-linear-gradient(#000 0px, #000 2px, transparent 2px, transparent 4px),
+        linear-gradient(#007f0c, #004306);
     }
 }

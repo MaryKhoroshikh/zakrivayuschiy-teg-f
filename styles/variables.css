@@ -4,9 +4,13 @@
     --font-accent: PressStart2P-Regular, sans-serif;
     --f-w-text: 400; 
     --f-w-title: 700;
-    /* для темной темы 465 и 785 соотв */
 
     --bg-clr:  #fff;
     --accent-color: #f00;
     --text-clr: #000;
+
+    --bg-gr: 
+        repeating-linear-gradient(90deg, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
+        repeating-linear-gradient(#d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
+        linear-gradient(#e7e7e7 0.01%, #1a1a1a);     
 }

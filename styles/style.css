@@ -19,7 +19,10 @@
   min-block-size: 100dvb;
   font-family: var(--font);
   font-variation-settings: 'wght' var(--f-w-text);
+  background-image: var(--bg-gr);
   background-color: var(--bg-clr);
+  background-attachment: fixed;
+  background-size: cover;
   color: var(--text-clr);
 }
 
