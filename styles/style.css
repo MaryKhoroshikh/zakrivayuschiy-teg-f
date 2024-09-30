@@ -17,6 +17,8 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--font);
+  font-variation-settings: 'wght' var(--f-w-text);
 }
 
 svg {
