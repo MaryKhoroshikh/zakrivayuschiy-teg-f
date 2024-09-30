@@ -18,3 +18,13 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
 }
+
+svg {
+  width: 100px;
+  padding: 20px;
+}
+
+.floppy {
+  /* ничего не работает с цветом */
+  color: red;
+}
