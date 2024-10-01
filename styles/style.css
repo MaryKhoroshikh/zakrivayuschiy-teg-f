@@ -105,7 +105,11 @@
   background-color: var(--bg-clr);
 }
 
-card__title
+.card__title {
+  font-size: 18px;
+  font-weight: var(--f-w-title);
+  margin: 3px 24px 3px 10px;
+}
 
 .card__img {
   inline-size: 100%;
@@ -116,7 +120,10 @@ card__title
   object-fit: contain;
 }
 
-card__text
+.card__text {
+
+}
+
 card__icon-button
 like-icon
 card__like-button
@@ -138,7 +145,12 @@ button__text
     inline-size: 100%;
   }
 
-  .floppy {
+  .card__title {
+    margin: 5px 10px;
+  }
 
+  .floppy {
+    inline-size: 28px;
+    block-size: 28px;
   }
 }
