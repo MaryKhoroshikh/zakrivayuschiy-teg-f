@@ -90,16 +90,26 @@
         <p class="card__text">
           Место для ваших воспоминаний о начале обучения.
         </p>
-        <button class="card__icon-button button">
-          <svg class="like-icon">
-            <!-- сюда вставить иконку сердечка -->
-          </svg>
-        </button>
-        <button class="card__like-button button">
-          <span class="button__text">Like</span>
-        </button>
+        <div class="liked">
+          <button
+            type="button"
+            class="button card__icon-button">
+            <svg 
+              class="like-icon" 
+              xmlns="http://www.w3.org/2000/svg" fill="none" 
+              viewBox="0 0 27 24">
+              <path fill="#000" d="M6 0H3v3h3V0Zm3 0H6v3h3V0ZM3 3H0v3h3V3Zm0 3H0v3h3V6Zm0 3H0v3h3V9Zm9-9H9v3h3V0ZM6 12H3v3h3v-3Zm3 3H6v3h3v-3Zm3 3H9v3h3v-3Zm9-18h3v3h-3V0Zm-3 0h3v3h-3V0Zm6 3h3v3h-3V3Zm0 3h3v3h-3V6Zm0 3h3v3h-3V9Zm-9-9h3v3h-3V0Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V3Z"/><path fill="red" d="M6 3H3v3h3V3Zm3 3H6v3h3V6Zm3-3H9v3h3V3ZM6 9H3v3h3V9Zm3 0H6v3h3V9Zm0 3H6v3h3v-3Zm3-6H9v3h3V6Zm0 9H9v3h3v-3Zm0-3H9v3h3v-3Zm9-9h3v3h-3V3Zm-3 0h3v3h-3V3Zm3 3h3v3h-3V6Zm-3 0h3v3h-3V6Zm-3-3h3v3h-3V3Zm6 6h3v3h-3V9Zm-3 0h3v3h-3V9Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3V6Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/><path fill="#fff" d="M12 9H9v3h3V9Zm3 0h3v3h-3V9Zm0 0h-3v3h3V9Zm0-3h-3v3h3V6Zm0 6h-3v3h3v-3Z"/>
+            </svg>
+          </button>
+          <button
+            type="button"
+            class="button card__like-button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
       </article>
-      <button class="button-save button">
+      <button 
+        class="button button-save">
         <svg 
           viewBox="0 0 40 40" 
           class="floppy">

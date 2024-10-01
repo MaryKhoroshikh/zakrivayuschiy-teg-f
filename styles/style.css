@@ -103,10 +103,10 @@
 .card {
   border: 2px solid var(--text-clr);
   background-color: var(--bg-clr);
+  font-size: 18px;
 }
 
 .card__title {
-  font-size: 18px;
   font-weight: var(--f-w-title);
   margin: 3px 24px 3px 10px;
 }
@@ -121,13 +121,29 @@
 }
 
 .card__text {
-
+  padding: 25px 25px 0;
 }
 
-card__icon-button
-like-icon
-card__like-button
-button__text
+.liked {
+  padding: 25px;
+  display: flex;
+  gap: 12px;
+  justify-content: end;
+}
+
+.card__icon-button, .card__like-button {
+  background-color: transparent;
+  border: none;
+}
+
+.like-icon {
+  inline-size: 24px;
+  block-size: 27px;
+}
+
+.button__text {
+  font-family: var(--font-accent);
+}
 
 .button-save {
   background-color: var(--bg-clr);
