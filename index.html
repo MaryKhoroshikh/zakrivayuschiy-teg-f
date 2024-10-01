@@ -23,15 +23,15 @@
   </head>
   <body class="page">
     <header class="header section">
-      <h1>&lt;/HTML&gt;</h1>
-      <p>
+      <p class="logo">&lt;/HTML&gt;</p>
+      <h1 class="main-title">
         закрывающий тег
-      </p>
+      </h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
-            <button type="button" data-theme="dark" class="theme-menu__button">
+            <button type="button" data-theme="dark" class="theme-menu__button button">
               Темно
             </button>
           </li>
@@ -40,13 +40,13 @@
               type="button"
               data-theme="auto"
               disabled
-              class="theme-menu__button"
+              class="theme-menu__button button"
             >
               Авто
             </button>
           </li>
           <li class="theme-menu__item">
-            <button type="button" data-theme="light" class="theme-menu__button">
+            <button type="button" data-theme="light" class="theme-menu__button button">
               Светло
             </button>
           </li>
@@ -55,32 +55,31 @@
     </header>
     <main class="main section">
       <article class="card">
-        <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
+        <h2 class="card__title">
+          Фритрек и нулевой спринт: Подготовка к работе
+        </h2>
         <picture class="card__img">
           <source 
             type="image/avif" 
-            srcset="./images/bus-large.avif" 
-            media="(min-width: 376px)">
+            srcset="./images/bus/large/bus-l-d.avif"
+            media="(prefers-color-scheme: dark)">
           <source 
             type="image/webp" 
-            srcset="./images/bus-large.webp" 
-            media="(min-width: 376px)">
+            srcset="./images/bus/large/bus-l-d.webp"
+            media="(prefers-color-scheme: dark)">
           <source 
             type="image/png" 
-            srcset="./images/bus-large.png" 
-            media="(min-width: 376px)">
+            srcset="./images/bus/large/bus-l-d.png"
+            media="(prefers-color-scheme: dark)">
           <source 
             type="image/avif" 
-            srcset="./images/bus-small.avif">
+            srcset="./images/bus/large/bus-l-l.avif">
           <source 
             type="image/webp" 
-            srcset="./images/bus-small.webp">
-          <source 
-            type="image/png"
-            srcset="./images/bus-small.png">
+            srcset="./images/bus/large/bus-l-l.webp">
           <img
               class="img" 
-              src="./images/bus-small.png" 
+              src="./images/bus/large/bus-l-l.png" 
               alt="микроавтобус"
               loading="lazy"
           >
@@ -91,20 +90,23 @@
         <p class="card__text">
           Место для ваших воспоминаний о начале обучения.
         </p>
-        <svg class="like-icon">
-          <!-- сюда вставить иконку сердечка -->
-        </svg>
-        <button class="card__like-button">
-          Like
+        <button class="card__icon-button button">
+          <svg class="like-icon">
+            <!-- сюда вставить иконку сердечка -->
+          </svg>
+        </button>
+        <button class="card__like-button button">
+          <span class="button__text">Like</span>
         </button>
       </article>
-      <button class=""></button>
-      <button class="button__text">
-        Сохранить на память
+      <button class="button-save button">
+        <svg 
+          viewBox="0 0 40 40" 
+          class="floppy">
+          <use href="./svg/floppy.svg#floppy">
+        </svg>
+        <span class="button__text">Сохранить на память</span>
       </button>
-      <svg viewBox="0 0 40 40">
-        <use href="./svg/floppy.svg#floppy" class="floppy">
-      </svg>
     </main>
     <script src="./scripts/like.js"></script>
   </body>

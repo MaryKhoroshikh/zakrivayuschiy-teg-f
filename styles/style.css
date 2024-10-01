@@ -30,13 +30,68 @@
 }
 
 .section {
-  inline-size: 48vi;
-  padding-block-start: 100px;
-  background-color: var(--bg-clr);
+  inline-size: clamp(23.438rem, 30.516vw + 16.285rem, 43.75rem);
 }
 
 .header {
-  border: 1px solid var(--text-clr);
+  border: 2px solid var(--text-clr);
+  font-family: var(--font-accent);
+  line-height: 1.2;
+  font-weight: var(--f-w-text);
+  font-size: 14px;
+  text-align: center;
+  background-color: var(--bg-clr);
+  margin: 100px 0;
+}
+
+.logo {
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  padding: clamp(7.5rem, 1.502vw + 7.148rem, 8.5rem) 0 20px;
+}
+
+.main-title {
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+}
+
+.theme-menu {
+  padding: 25px 0;
+}
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.theme-menu__item
+
+.button {
+  background-color: transparent;
+  font-family: var(--font-accent);
+  font-size: 14px;
+  font-weight: var(--f-w-text);
+  line-height: 0.9;
+}
+
+.theme-menu__button {
+  border: none;
+  padding-inline-start: 20px;
+}
+
+.theme-menu__button:disabled {
+  opacity: 20%;
+  position: relative;
+}
+
+.theme-menu__button:disabled::before {
+  content: '▶';
+  display: block;
+  block-size: 13px;
+  inline-size: 16px;
+  color: var(--text-clr);
+  position: absolute;
+  inset: 0;
+  padding-inline-start: 0;
 }
 
 .main {
@@ -46,21 +101,44 @@
 }
 
 .card {
-  border: 1px solid var(--text-clr);
+  border: 2px solid var(--text-clr);
+  background-color: var(--bg-clr);
 }
 
-svg {
-  /* для проверки отображения */
-  width: 100px;
-  padding: 20px;
+card__title
+
+.card__img {
+  inline-size: 100%;
+}
+
+.img {
+  inline-size: 100%;
+  object-fit: contain;
+}
+
+card__text
+card__icon-button
+like-icon
+card__like-button
+button__text
+
+.button-save {
+  background-color: var(--bg-clr);
+  margin: 0 0 100px;
+  border: 2px solid var(--text-clr);
 }
 
 .floppy {
-
+  inline-size: 21px;
+  block-size: 21px;
 }
 
 @media (width <= 375px) {
   .width {
     inline-size: 100%;
+  }
+
+  .floppy {
+
   }
 }
