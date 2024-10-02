@@ -12,3 +12,23 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+@keyframes opacity {
+    to {
+        opacity: 0.6;
+    }
+  }
+
+@keyframes button-focus {
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes arrow-moving {
+    from {
+        margin-inline-start: -20px;
+    }
+    to {
+        margin-inline-start: -16px;
+    }
+}

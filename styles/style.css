@@ -69,7 +69,6 @@
   display: flex;
   justify-content: start;
   padding-inline-start: 15px;
-  position: relative;
 }
 
 .button {
@@ -80,10 +79,17 @@
   border: none;
   text-align: start;
   text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  position: relative;
+}
+
+.theme-menu__button:hover {
+  animation: opacity 0.3s ease forwards;
 }
 
 .theme-menu__button:disabled {
-  opacity: 20%;
+  animation: opacity 0.3s ease forwards;
+  pointer-events: none;
 }
 
 .theme-menu__button:disabled::before {
@@ -94,6 +100,29 @@
   color: var(--text-clr);
   position: absolute;
   inset: 0;
+  animation: arrow-moving 0.5s ease-in-out infinite alternate;
+}
+
+.theme-menu__button:focus {
+  outline: none;
+  opacity: 0.6;
+}
+
+.theme-menu__button::after {
+  content: '';
+  position: absolute;
+  display: block;
+  inset: 0;
+  inline-size: 100%;
+  block-size: 2px;
+  background-color: var(--text-clr);
+  margin-block-start: 17px;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+}
+
+.theme-menu__button:focus-visible::after {
+  animation: button-focus 0.3s ease forwards;
 }
 
 .main {
