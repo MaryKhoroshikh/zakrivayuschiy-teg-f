@@ -131,7 +131,7 @@
   line-height: 1;
   font-weight: var(--f-w-text);
   justify-self: end;
-  opacity: 0.5;
+  mix-blend-mode: hard-light;
   text-shadow:
     -1px 0 var(--bg-clr), 
     0 1px var(--bg-clr), 
