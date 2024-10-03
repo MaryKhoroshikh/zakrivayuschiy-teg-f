@@ -84,11 +84,13 @@
 }
 
 .theme-menu__button:hover {
-  animation: opacity-header 0.3s ease forwards;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
 }
 
 .theme-menu__button:disabled {
-  animation: opacity-header 0.3s ease forwards;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
   pointer-events: none;
 }
 
@@ -105,8 +107,12 @@
 
 .theme-menu__button:focus {
   outline: none;
+}
+
+.theme-menu__button:focus {
   opacity: 0.6;
 }
+
 
 .theme-menu__button::after {
   content: '';
@@ -118,11 +124,12 @@
   background-color: var(--text-clr);
   margin-block-start: 17px;
   transform: scaleX(0);
+  transition: transform 0.3s ease;
   transform-origin: 0 0;
 }
 
 .theme-menu__button:focus-visible::after {
-  animation: underlined 0.3s ease forwards;
+  transform: scaleX(1);
 }
 
 .main {
