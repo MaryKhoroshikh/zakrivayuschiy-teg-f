@@ -12,13 +12,13 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
-@keyframes opacity {
+@keyframes opacity-header {
     to {
         opacity: 0.6;
     }
-  }
+}
 
-@keyframes button-focus {
+@keyframes underlined {
     to {
         transform: scaleX(1);
     }
@@ -30,5 +30,35 @@
     }
     to {
         margin-inline-start: -16px;
+    }
+}
+
+@keyframes shadow {
+    0 {
+        box-shadow: 
+            0 
+            0 
+            0 
+            0 
+            var(--text-clr);
+    }
+
+    100% {
+        box-shadow: 
+            2px 
+            2px 
+            0 
+            0 
+            var(--text-clr);
+    }
+}
+
+@keyframes translate {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+      transform: translateX(0);
     }
 }

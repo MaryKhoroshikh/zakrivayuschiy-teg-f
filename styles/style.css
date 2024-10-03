@@ -84,11 +84,11 @@
 }
 
 .theme-menu__button:hover {
-  animation: opacity 0.3s ease forwards;
+  animation: opacity-header 0.3s ease forwards;
 }
 
 .theme-menu__button:disabled {
-  animation: opacity 0.3s ease forwards;
+  animation: opacity-header 0.3s ease forwards;
   pointer-events: none;
 }
 
@@ -122,7 +122,7 @@
 }
 
 .theme-menu__button:focus-visible::after {
-  animation: button-focus 0.3s ease forwards;
+  animation: underlined 0.3s ease forwards;
 }
 
 .main {
@@ -215,6 +215,36 @@
   padding: 15px 20px;
   margin: 0 auto 100px;
   inline-size: max-content;
+}
+
+.card__like-button, .button-save {
+  position: relative;
+  overflow: hidden;
+}
+
+.card__like-button::before, .button-save::before {
+  content: '';
+  position: absolute;
+  display: block;
+  inset: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  background-color: var(--text-clr);
+  transform: translateX(-100%);
+  transform-origin: 0 0;
+}
+
+.card__like-button:focus, .button-save:focus {
+  outline: none;
+}
+
+.card__like-button:focus-visible, .button-save:focus-visible {
+  animation: shadow 0.3s ease forwards;
+}
+
+.card__like-button:hover::before, .button-save:hover::before {
+  cursor:  pointer;
+  animation: translate 0.5s ease-in-out forwards;
 }
 
 .floppy {
