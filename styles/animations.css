@@ -21,3 +21,12 @@
         margin-inline-start: -16px;
     }
 }
+
+@keyframes heard-growth {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale( 1.5);
+    }
+}
