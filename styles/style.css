@@ -220,7 +220,33 @@
 }
 
 .main-body {
-  opacity: 0;
+  fill: transparent;
+  transition: fill 0.3s linear;
+}
+
+.core {
+  fill: transparent;
+  transition: fill 0.3s 0.03s linear;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--contour-clr);
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--contour-clr);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.card__icon-button:hover:active .main-body {
+  fill: var(--accent-color);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.card__icon-button:hover:active .core {
+  fill: var(--accent-color);
+  transition: fill 0.3s linear;
 }
 
 .button__text {

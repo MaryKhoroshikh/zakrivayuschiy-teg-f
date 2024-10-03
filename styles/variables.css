@@ -13,6 +13,7 @@
     --contour-clr: #000;
     --sparks-clr: #f00;
     --main-body-clr: #f00;
+    --core-clr: #f00;
 
     --bg-gr: 
         repeating-linear-gradient(90deg, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
