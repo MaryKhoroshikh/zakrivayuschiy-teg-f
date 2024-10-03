@@ -215,6 +215,10 @@
   padding-block-start: 4px;
 }
 
+.sparks {
+  opacity: 1;
+}
+
 .button__text {
   font-family: var(--font-accent);
   line-height: 0.9;
