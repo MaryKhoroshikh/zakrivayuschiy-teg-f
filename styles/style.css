@@ -227,6 +227,13 @@
 .card__like-button, .button-save {
   position: relative;
   overflow: hidden;
+  box-shadow: 
+    0 
+    0 
+    0 
+    0 
+    var(--text-clr);;
+  transition: box-shadow 0.3s ease;
 }
 
 .card__like-button::before, .button-save::before {
@@ -239,6 +246,7 @@
   background-color: var(--text-clr);
   transform: translateX(-100%);
   transform-origin: 0 0;
+  transition: transform 0.3s ease;
 }
 
 .card__like-button:focus, .button-save:focus {
@@ -246,12 +254,17 @@
 }
 
 .card__like-button:focus-visible, .button-save:focus-visible {
-  animation: shadow 0.3s ease forwards;
+  box-shadow: 
+    2px 
+    2px 
+    0 
+    0 
+    var(--text-clr);;
 }
 
 .card__like-button:hover::before, .button-save:hover::before {
   cursor:  pointer;
-  animation: translate 0.5s ease-in-out forwards;
+  transform: translateX(0);
 }
 
 .floppy {
