@@ -211,6 +211,9 @@
   line-height: 0.9;
   font-size: 14px;
   font-weight: var(--f-w-text);
+  position: relative;
+  color: var(--mix-blend-mode-clr);
+  mix-blend-mode: difference;
 }
 
 .card__like-button {
@@ -246,7 +249,7 @@
   background-color: var(--text-clr);
   transform: translateX(-100%);
   transform-origin: 0 0;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 .card__like-button:focus, .button-save:focus {
@@ -270,6 +273,8 @@
 .floppy {
   inline-size: 21px;
   block-size: 21px;
+  color: var(--mix-blend-mode-clr);
+  mix-blend-mode: difference;
 }
 
 @media (max-width: 376px) {

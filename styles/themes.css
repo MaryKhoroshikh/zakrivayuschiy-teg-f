@@ -12,6 +12,7 @@
     --bg-clr:  #000;
     --text-shadow: rgba(0, 0, 0, 0.5);
     --text-clr: #00cc14;
+    --mix-blend-mode-clr: #00cc14;
 
     --bg-gr: 
     repeating-linear-gradient(90deg, #d000 0px, #000 2px, transparent 2px, transparent 4px),
@@ -26,6 +27,7 @@
     --bg-clr:  #fff;
     --text-shadow: rgba(255, 255, 255, 0.5);
     --text-clr: #000;
+    --mix-blend-mode-clr: #fff;
 
     --bg-gr: 
     repeating-linear-gradient(90deg, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
@@ -41,6 +43,7 @@
         --bg-clr:  #000;
         --text-shadow: rgba(0, 0, 0, 0.5);
         --text-clr: #00cc14;
+        --mix-blend-mode-clr: #00cc14;
 
         --bg-gr: 
         repeating-linear-gradient(90deg, #d000 0px, #000 2px, transparent 2px, transparent 4px),

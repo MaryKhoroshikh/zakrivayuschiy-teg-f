@@ -9,6 +9,7 @@
     --text-shadow: rgba(255, 255, 255, 0.5);
     --accent-color: #f00;
     --text-clr: #000;
+    --mix-blend-mode-clr: #fff;
 
     --bg-gr: 
         repeating-linear-gradient(90deg, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
