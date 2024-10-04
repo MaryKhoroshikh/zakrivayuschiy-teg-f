@@ -167,6 +167,7 @@
   font-weight: var(--f-w-text);
   justify-self: end;
   mix-blend-mode: hard-light;
+  opacity: 0.5;
   text-shadow:
     -1px 0 var(--bg-clr), 
     0 1px var(--bg-clr), 
@@ -356,7 +357,7 @@
 
 #save-window {
   inline-size: calc(var(--width) / 2);
-  block-size: 191px;
+  block-size: 195px;
   padding: 30px;
   background-color: var(--bg-clr);
   border: 2px solid var(--text-clr);
@@ -368,6 +369,10 @@
   grid-template-rows: repeat(2, min-content);
   gap: 30px 20px;
   align-content: center;
+}
+
+#save-window .button__text {
+  text-transform: uppercase;
 }
 
 #save-window > .button__text {
@@ -382,12 +387,9 @@
 
 #save-window .button {
   inline-size: 100%;
-  padding-block: 5px;
+  block-size: 38px;
   grid-column-end: span 2;
-}
 
-#save-window .button__text {
-  text-transform: uppercase;
 }
 
 #save-window::backdrop {
