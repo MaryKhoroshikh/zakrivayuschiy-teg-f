@@ -160,6 +160,7 @@
 .label {
   position: absolute;
   inset: 0;
+  z-index: 1;
   margin: 25px;
   font-family: var(--font-accent);
   font-size: 14px;
@@ -396,13 +397,33 @@
   background-color: rgb(0 0 0 / 0.75);
 } 
 
-.street
-.sunset
-.mountain
-.fire
-.cosmos
-.desk
-.room
+.street {
+  filter: brightness(120%);
+}
+
+.sunset {
+  filter: blur(2px);
+}
+
+.mountain {
+  filter: opacity(0.8);
+}
+
+.fire {
+  filter: hue-rotate(10deg) grayscale(0.2);
+}
+
+.cosmos {
+  filter: contrast(150%);
+}
+
+.desk {
+  filter: grayscale(0.6) invert(20%);
+}
+
+.room {
+  filter: saturate(250%);
+}
 
 @media (max-width: 376px) {
   .section {
