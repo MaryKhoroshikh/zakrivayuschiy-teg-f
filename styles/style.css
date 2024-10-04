@@ -362,14 +362,28 @@
   border: 2px solid var(--text-clr);
 }
 
-.save-text {
-  display: flex;
-  gap: 20px;
+#save-window[open] {
+  display: grid;
+  grid-template-columns: 39px 1fr;
+  grid-template-rows: repeat(2, min-content);
+  gap: 30px 20px;
   align-content: center;
 }
 
+#save-window > .button__text {
+  line-height: 1.5;
+}
+
+#save-window .floppy {
+  inline-size: 39px;
+  block-size: 39px;
+  align-self: center;
+}
+
 #save-window .button {
-  margin-block-start: 30px;
+  inline-size: 100%;
+  padding-block: 5px;
+  grid-column-end: span 2;
 }
 
 #save-window .button__text {
