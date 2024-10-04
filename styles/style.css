@@ -30,7 +30,7 @@
 }
 
 .section {
-  inline-size: clamp(23.438rem, 30.516vw + 16.285rem, 43.75rem);
+  inline-size: var(--width);
 }
 
 .header {
@@ -41,20 +41,17 @@
   text-align: center;
   background-color: var(--bg-clr);
   margin: 100px 0;
-}
-
-.border {
   border: 2px solid var(--text-clr);
 }
 
 .logo {
-  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-  padding: clamp(7.5rem, 1.502vw + 7.148rem, 8.5rem) 0 20px;
+  font-size: var(--f-s-logo);
+  padding: var(--logo-padding-block-start) 0 20px;
 }
 
 .main-title {
   text-transform: uppercase;
-  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  font-size: var(--f-s-main-title);
 }
 
 .theme-menu__list {
@@ -73,6 +70,7 @@
 
 .button {
   background-color: transparent;
+  border: 2px solid var(--text-clr);
 }
 
 .theme-menu__button {
@@ -113,7 +111,6 @@
   opacity: 0.6;
 }
 
-
 .theme-menu__button::after {
   content: '';
   position: absolute;
@@ -142,6 +139,7 @@
   background-color: var(--bg-clr);
   font-size: 18px;
   line-height: 1.2;
+  border: 2px solid var(--text-clr);
 }
 
 .card__title {
@@ -153,7 +151,7 @@
 
 .card__img {
   inline-size: 100%;
-  block-size: clamp(23.438rem, 30.516vw + 16.285rem, 43.75rem);
+  block-size: var(--width);
   position: relative;
   border-top: 2px solid var(--text-clr);
   border-bottom: 2px solid var(--text-clr);
@@ -215,8 +213,17 @@
   padding-block-start: 4px;
 }
 
+.like-icon:hover {
+  cursor: pointer;
+}
+
 .sparks {
   opacity: 0;
+}
+
+.contour {
+  fill: var(--contour-clr);
+  transition: fill 0.1s linear;
 }
 
 .like-icon .main-body {
@@ -270,6 +277,12 @@
   transform-origin: center center;
 }
 
+.is-liked .sparks {
+  animation: sparks-flashing 0.3s ease-in backwards 2 alternate;
+  animation-delay: 0.3s;
+  transform-origin: center center;
+}
+
 .button__text {
   font-family: var(--font-accent);
   line-height: 0.9;
@@ -281,7 +294,7 @@
 }
 
 .card__like-button {
-  inline-size: clamp(8.125rem, 9.0053rem + -3.7559vw, 5.625rem);
+  inline-size: var(--like-button-width);
 }
 
 .button-save {
@@ -341,9 +354,35 @@
   mix-blend-mode: difference;
 }
 
+#save-window {
+  inline-size: calc(var(--width) / 2);
+  block-size: 191px;
+  padding: 30px;
+  background-color: var(--bg-clr);
+  border: 2px solid var(--text-clr);
+}
+
+.save-text {
+  display: flex;
+  gap: 20px;
+  align-content: center;
+}
+
+#save-window .button {
+  margin-block-start: 30px;
+}
+
+#save-window .button__text {
+  text-transform: uppercase;
+}
+
+#save-window::backdrop {
+  background-color: rgb(0 0 0 / 0.75);
+} 
+
 @media (max-width: 376px) {
   .section {
-    inline-size: 100%;
+    inline-size: 100vi;
   }
 
   .main-title{
@@ -369,6 +408,10 @@
     block-size: 28px;
     margin: 0 auto;  
   }
+
+  #save-window {
+    inline-size: 90vi;
+    padding-inline: 42px;
 }
 
 @supports((text-stroke: 1px var(--bg-clr);) or (-webkit-text-stroke: 1px var(--bg-clr))) {

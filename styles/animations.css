@@ -30,3 +30,9 @@
         transform: scale( 1.5);
     }
 }
+
+@keyframes sparks-flashing {
+    to {
+        opacity: 1;
+    }
+}

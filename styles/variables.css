@@ -1,9 +1,15 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
+    --width: clamp(23.438rem, 30.516vw + 16.285rem, 43.75rem);
+    --logo-padding-block-start: clamp(7.5rem, 1.502vw + 7.148rem, 8.5rem);
+    --like-button-width: clamp(8.125rem, 9.0053rem + -3.7559vw, 5.625rem);
+
     --font: Inter-Variable, sans-serif;
     --font-accent: PressStart2P-Regular, sans-serif;
     --f-w-text: 400; 
     --f-w-title: 700;
+    --f-s-logo: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+    --f-s-main-title: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 
     --bg-clr:  #fff;
     --text-shadow: rgba(255, 255, 255, 0.5);
