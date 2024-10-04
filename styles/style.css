@@ -146,7 +146,7 @@
   font-size: 18px;
   font-variation-settings: 'wght' var(--f-w-title);
   line-height: 1.2;
-  padding: 3px 24px 3px 10px;
+  margin: 5px 10px;
 }
 
 .card__img {
@@ -401,14 +401,6 @@
     inline-size: 100vi;
   }
 
-  .main-title{
-    margin: 2px 0px;
-  }
-
-  .card__title {
-    margin: 5px 10px;
-  }
-
   .label {
     margin: 15px 10px;
   }
@@ -428,6 +420,7 @@
   #save-window {
     inline-size: 90vi;
     padding-inline: 42px;
+    }
 }
 
 @supports((text-stroke: 1px var(--bg-clr);) or (-webkit-text-stroke: 1px var(--bg-clr))) {
