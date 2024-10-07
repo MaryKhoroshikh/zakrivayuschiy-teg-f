@@ -15,7 +15,7 @@
     --contour-clr: #00cc14;
 
     --bg-gr: 
-    repeating-linear-gradient(90deg, #d000 0px, #000 2px, transparent 2px, transparent 4px),
+    repeating-linear-gradient(90deg, #000 0px, #000 2px, transparent 2px, transparent 4px),
     repeating-linear-gradient(#000 0px, #000 2px, transparent 2px, transparent 4px),
     linear-gradient(#007f0c, #004306);
 }
@@ -46,7 +46,7 @@
         --contour-clr: #00cc14;
 
         --bg-gr: 
-        repeating-linear-gradient(90deg, #d000 0px, #000 2px, transparent 2px, transparent 4px),
+        repeating-linear-gradient(90deg, #000 0px, #000 2px, transparent 2px, transparent 4px),
         repeating-linear-gradient(#000 0px, #000 2px, transparent 2px, transparent 4px),
         linear-gradient(#007f0c, #004306);
     }
