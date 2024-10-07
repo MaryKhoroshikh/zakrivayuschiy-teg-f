@@ -191,6 +191,7 @@
 .card__buttons {
   padding: 25px;
   display: flex;
+  gap: 2px;
   justify-content: end;
 }
 
@@ -201,6 +202,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  block-size: 38px;
 }
 
 .card__icon-button:focus {
