@@ -5,7 +5,7 @@
     --like-button-width: clamp(8.125rem, 9.0053rem + -3.7559vw, 5.625rem);
 
     --font: Inter-Variable, sans-serif;
-    --font-accent: PressStart2P, sans-serif;
+    --font-accent: PressStart2P, fantasy, sans-serif;
     --f-w-text: 400; 
     --f-w-title: 700;
     --f-s-logo: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
