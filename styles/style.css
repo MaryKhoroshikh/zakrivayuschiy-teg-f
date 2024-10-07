@@ -45,8 +45,9 @@
 }
 
 .logo {
+  display: inline-block;
   font-size: var(--f-s-logo);
-  padding: var(--logo-padding-block-start) 0 20px;
+  padding-block: var(--logo-padding-block-start) 20px;
 }
 
 .main-title {
@@ -372,7 +373,12 @@
   align-content: center;
 }
 
-#save-window .button__text {
+.save-window__text {
+  font-family: var(--font-accent);
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: var(--f-w-text);
+  color: var(--text-clr);
   text-transform: uppercase;
 }
 
