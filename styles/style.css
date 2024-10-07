@@ -101,13 +101,15 @@
 
 .theme-menu__button:focus {
   outline: none;
-}
-
-.theme-menu__button:focus {
   opacity: 0.6;
 }
 
-.theme-menu__button::after {
+.theme-menu__text {
+  position: relative;
+  display: block;
+}
+
+.theme-menu__text::after {
   content: '';
   position: absolute;
   display: block;
@@ -115,13 +117,13 @@
   inline-size: 100%;
   block-size: 2px;
   background-color: var(--text-clr);
-  margin-block-start: 17px;
+  margin-block-start: 15px;
   transform: scaleX(0);
   transition: transform 0.3s ease;
   transform-origin: 0 0;
 }
 
-.theme-menu__button:focus-visible::after {
+.theme-menu__button:focus-visible .theme-menu__text::after {
   transform: scaleX(1);
 }
 
