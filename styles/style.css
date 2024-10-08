@@ -336,7 +336,7 @@
   background-color: var(--text-clr);
   transform: translateX(-100%);
   transform-origin: 0 0;
-  transition: transform 0.5s ease;
+  transition: transform 0.5s ease-in-out;
 }
 
 .button:focus {
@@ -365,9 +365,8 @@
 }
 
 .save-window {
-  inline-size: 90vi;
+  inline-size: 91vi;
   max-inline-size: 357px;
-  min-block-size: 195px;
   padding: 30px;
   background-color: var(--bg-clr);
   border: 2px solid var(--text-clr);
@@ -400,7 +399,7 @@
   inline-size: 100%;
   block-size: 38px;
   grid-column-end: span 2;
-
+  text-transform: uppercase;
 }
 
 .save-window::backdrop {
@@ -443,7 +442,7 @@
   filter: saturate(250%);
 }
 
-@media (max-width: 376px) {
+@media (max-width: 375px) {
   .section {
     inline-size: 100vi;
   }
@@ -462,8 +461,8 @@
     margin: 0 auto;  
   }
 
-  #save-window {
-    padding-inline: 42px;
+  .save-window {
+    padding-inline: 40px;
   }
 }
 
